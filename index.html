@@ -1,0 +1,67 @@
+<!--
+Copyright 2018 Google Inc.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Set character encoding -->
+  <meta charset="utf-8">
+  <!-- Set the viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <!-- Set title -->
+  <title>Photo blog</title>
+  <!-- Request styles -->
+  <link rel="stylesheet" href="/style/main.css" />
+</head>
+<body>
+  <header>
+    <h1>Selamat Datang Di Buku kahlil Gibran</h1>
+  </header>
+  <main>
+    <div class="img-container">
+      <!-- image is CC0 - no attribution required https://unsplash.com/photos/w9tHZ5fi3e4 -->
+      <img src="/Aden/images/gibran4.jpg" alt="Kettle, cup and other objects on a cupboard">
+    </div>
+    <p>
+     Kahlil Gibran (juga dieja Khalil Gibran; bernama lahir Gibran Khalil Gibran, bahasa Arab: جبران خليل جبران, lahir di Lebanon, 6 Januari 1883 – meninggal di New York City, Amerika Serikat, 10 April 1931 pada umur 48 tahun) adalah seorang seniman, penyair, dan penulis Lebanon Amerika.
+    </p>
+	<h2>Berikut beberapa judul bubkunya:</h2>
+    <ul>
+      <li><a href="/Aden/pages/post1.html">Cinta yang Datang Tak Harus Menghapus Jejak yang Lalu</a></li>
+      <li><a href="/Aden/pages/post2.html">Syair-Syair Cinta</a></li>
+      <li><a href="/Aden/pages/post3.html">Keindahan Kematian</a></li>
+      <li><a href="/Aden/non-existent.html">Non-existent file</a></li>
+    </ul>
+  </main>
+  <footer>
+    <a href="#">Twitter</a>
+    <a href="#">Facebook</a>
+    <a href="#">Google+</a>
+  </footer>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('Aden.js')
+        .then(swReg => {
+          console.log('Service Worker is registered', swReg);
+        })
+        .catch(err => {
+          console.error('Service Worker Error', err);
+        });
+      });
+    }
+  </script>
+</body>
+</html>
